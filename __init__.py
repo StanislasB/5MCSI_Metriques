@@ -33,6 +33,10 @@ def monhistogramme():
 @app.route('/')
 def hello_world():
     return render_template('hello.html') #ESIEEIT
+
+@app.route("/commits/")
+def monnombredecommits():
+    return render_template("commits.html")
   
 if __name__ == "__main__":
   app.run(debug=True)
